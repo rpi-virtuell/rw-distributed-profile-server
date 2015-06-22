@@ -226,7 +226,6 @@ class RW_Distributed_Profile_Server_API {
      */
     static public function generate_profile_data( $user_name  ) {
         $profiles = array();
-
         $userObj = get_user_by( 'slug', $user_name );
         if ( is_object( $userObj ) ) {
             // WordPress default profile data
@@ -248,7 +247,7 @@ class RW_Distributed_Profile_Server_API {
 
                 foreach ( $groups as $groupObj ) { // All groups
                     foreach ( $groupObj->fields as $fieldObj ) { // All fields
-                        $profiles[ 'buddypress' ][ $groupObj->name ][ $fieldObj->name ][ 'value' ] = xprofile_get_field_data( $fieldObj->id, $userObj->ID, 'comma' );
+                        $profiles[ 'buddypress' ][ $groupObj->name ][ $fieldObj->name ][ 'value' ] = maybe_serialize( xprofile_get_field_data( $fieldObj->id, $userObj->ID, 'array' ) );
                         $profiles[ 'buddypress' ][ $groupObj->name ][ $fieldObj->name ][ 'visibility' ] = xprofile_get_field_visibility_level( $fieldObj->id, $userObj->ID ) ;
                     }
                 }
