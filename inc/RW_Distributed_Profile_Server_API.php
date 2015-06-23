@@ -244,7 +244,7 @@ class RW_Distributed_Profile_Server_API {
                     'fetch_fields'  => true,
                     'fetch_visibility_level' => true,
                 ) ) );
-
+                remove_filter( 'xprofile_get_field_data', 'xprofile_filter_format_field_value_by_field_id', 5 );
                 foreach ( $groups as $groupObj ) { // All groups
                     foreach ( $groupObj->fields as $fieldObj ) { // All fields
                         $profiles[ 'buddypress' ][ $groupObj->name ][ $fieldObj->name ][ 'value' ] = maybe_serialize( xprofile_get_field_data( $fieldObj->id, $userObj->ID, 'array' ) );
