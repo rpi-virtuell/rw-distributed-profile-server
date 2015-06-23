@@ -2,7 +2,7 @@
 
 /**
  * Plugin Name:      RW Distributed Profile Server
- * Plugin URI:       https://github.com/rpi-virtuell/rw_distributed_profile_server
+ * Plugin URI:       https://github.com/rpi-virtuell/rw-distributed-profile-server
  * Description:      Allow to copy profile data between systems
  * Author:           Frank Staude
  * Version:          0.1
