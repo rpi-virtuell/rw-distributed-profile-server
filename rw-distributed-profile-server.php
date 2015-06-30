@@ -5,12 +5,13 @@
  * Plugin URI:       https://github.com/rpi-virtuell/rw-distributed-profile-server
  * Description:      Allow to copy profile data between systems
  * Author:           Frank Staude
- * Version:          0.1
+ * Version:          0.1.1
  * Licence:          GPLv3
  * Author URI:       http://staude.net
  * Text Domain:      rw_distributed_profile_server
  * Domain Path:      /languages
- * Last Change:      16.06.2015 13:20
+ * GitHub Plugin URI: https://github.com/rpi-virtuell/rw-distributed-profile-server
+ * GitHub Branch:     master
  */
 
 class RW_Distributed_Profile_Server {
@@ -21,7 +22,7 @@ class RW_Distributed_Profile_Server {
      * @since   0.1
      * @access  public
      */
-    static public $version = "0.1";
+    static public $version = "0.1.1";
 
     /**
      * Singleton object holder

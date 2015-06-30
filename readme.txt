@@ -3,7 +3,7 @@ Contributors: f.staude
 Tags:
 Requires at least: 4.0
 Tested up to: 4.2.2
-Stable tag: 0.1
+Stable tag: 0.1.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -55,6 +55,9 @@ Answer
 
 
 == Changelog ==
+
+= 0.1.1 =
+* Added support for WordPress Plugin GitHub updater ( #2 )
 
 = 0.1 =
 * First version published
